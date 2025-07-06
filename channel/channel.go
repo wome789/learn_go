@@ -76,7 +76,7 @@ func consumer(chans chan int, wg *sync.WaitGroup) {
 				return
 			}
 			fmt.Println(num)
-			time.Sleep(100 * time.Millisecond)
+			// time.Sleep(100 * time.Millisecond)
 		case <-time.After(5000 * time.Millisecond):
 			fmt.Println("No data for 500ms, checking again")
 			return
